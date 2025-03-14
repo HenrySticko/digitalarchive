@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["font-awesome"],{"1f54":function(n,o,w){}}]);
