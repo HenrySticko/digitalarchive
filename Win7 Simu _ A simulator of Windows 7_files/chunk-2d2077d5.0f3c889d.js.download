@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2077d5"],{a16e:function(n,e,s){"use strict";s.r(e),s.d(e,"ResolutionWeb",(function(){return t}));var o=s("1547");class t extends o["b"]{setResolution(){}}}}]);
