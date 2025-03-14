@@ -120,6 +120,59 @@
                     </div>
                 </div>
             </div>
+            <div class="window ui-draggable focused" id="window-notepad" data-child="#window-font" style="display: flex; left: 100px; top: 0px;">
+                <div class="titlebar">
+                    <div class="title notepad ui-draggable-handle">Untitled - Notepad</div>
+                    <div class="controls">
+                        <div class="control minimize" data-target="#window-notepad">–</div>
+                        <div class="control maximize" data-target="#window-notepad">□</div>
+                        <div class="control closewin" data-target="#window-notepad">×</div>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <div class="toolbar-item">File
+                        <ul class="toolbar-item-lv2">
+                            <li id="notepad-new">New</li>
+                            <li id="notepad-open">Open</li>
+                            <li id="notepad-save" class="text-muted">Save</li>
+                            <hr>
+                            <li class="closewin" data-target="#window-notepad">Exit</li>
+                        </ul>
+                    </div>
+                    <div class="toolbar-item">Edit
+                        <ul class="toolbar-item-lv2">
+                            <li id="notepad-undo">Undo</li>
+                            <hr>
+                            <li id="notepad-cut" class="text-muted">Cut</li>
+                            <li id="notepad-copy" class="text-muted">Copy</li>
+                            <li id="notepad-paste" class="text-muted">Paste</li>
+                            <li id="notepad-del" class="text-muted">Delete</li>
+                            <hr>
+                            <li id="notepad-find" class="text-muted">Find...</li>
+                            <li id="notepad-findnext" class="text-muted">Find Next</li>
+                            <li id="notepad-replace" class="text-muted">Replace...</li>
+                            <li id="notepad-goto" class="text-muted">Go to...</li>
+                            <hr>
+                            <li id="notepad-all">Select All</li>
+                            <li id="notepad-datetime">Time/Date</li>
+                        </ul>
+                    </div>
+                    <div class="toolbar-item">Format
+                        <ul class="toolbar-item-lv2">
+                            <li id="notepad-wrap">Word Wrap</li>
+                            <li data-toggle="window" data-target="#window-font">Font...</li>
+                        </ul>
+                    </div>
+                    <div class="toolbar-item">View
+                        <ul class="toolbar-item-lv2">
+                            <li id="notepad-statbar" class="text-muted">Status Bar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container p-0">
+                    <textarea id="notepad-editor"></textarea>
+                </div>
+            </div>
             <div id="desktop-menu">
                 <div class="menu-item has-sub">View
                     <div id="sub-menu">
