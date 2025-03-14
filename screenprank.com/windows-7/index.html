@@ -39,6 +39,87 @@
     </div>
     <div id="windows">
         <div id="desktop">
+            <div class="window ui-draggable now-playing" id="window-player" style="display: flex; left: 0px; top: 70px;">
+                <div class="titlebar">
+                    <div class="title player ui-draggable-handle">Windows Media Player</div>
+                    <div class="controls">
+                        <div class="control minimize" data-target="#window-player">–</div>
+                        <div class="control maximize" data-target="#window-player">□</div>
+                        <div class="control closewin" data-target="#window-player">×</div>
+                    </div>
+                </div>
+                <div class="addrbar">
+                    <div>
+                        <div class="button round back">➜</div>
+                        <div class="button round">➜</div>
+                    </div>
+                    <div class="addr pl-0">
+                        <label>Library</label>
+                        <label id="player-library">Pictures</label>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <div class="toolbar-item has-sub">
+                        Organize
+                        <ul class="toolbar-item-lv2">
+                            <li class="has-sub">
+                                Manage libraries
+                                <div class="toolbar-item-lv3">
+                                    <label for="player-open__audio">Music
+                                        <input id="player-open__audio" type="file" multiple="" hidden="" accept="audio/*">
+                                    </label>
+                                    <label for="player-open__video">Videos
+                                        <input id="player-open__video" type="file" multiple="" hidden="" accept="video/*">
+                                    </label>
+                                    <label for="player-open__photo">Pictures
+                                        <input id="player-open__photo" type="file" multiple="" hidden="" accept="image/*">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="text-muted">Options</li>
+                        </ul>
+                    </div>
+                    <div class="toolbar-item text-muted">Stream</div>
+                </div>
+                <div class="container">
+                    <div id="player-list"><table><tr><th>Title</th><th>Length</th><th>Size</th><th>Last Modified</th><th>Type</th></tr><tr><td>R</td><td></td><td>1.4 MB</td><td>March 13, 2025</td><td>png</td></tr></table></div>
+                    <audio id="player-audio" hidden=""></audio>
+                    <video id="player-video" class="player-overlay"></video>
+                    <img id="player-photo" class="player-overlay" style="display: inline;" src="blob:https://screenprank.com/8cd6f24d-da41-4485-99ce-20450d4e6c92">
+                </div>
+                <div id="player-footer">
+                    <input id="player-progress" type="range" value="0">
+                    <div id="player-info">
+                        <div id="player-controls">
+                            <div class="player-control" id="random">
+                                <i class="fa fa-random rotate-270"></i>
+                            </div>
+                            <div class="player-control" id="loop">
+                                <i class="fa fa-repeat rotate-270"></i>
+                            </div>
+                            <div class="player-control" id="stop">
+                                <i class="fa fa-stop"></i>
+                            </div>
+                            <div class="player-control" id="play-prev">
+                                <i class="fa fa-fast-backward"></i>
+                            </div>
+                            <div class="player-control" id="play">
+                                <i class="fa fa-pause"></i>
+                            </div>
+                            <div class="player-control" id="play-next">
+                                <i class="fa fa-fast-forward"></i>
+                            </div>
+                            <div class="player-control" id="mute">
+                                <i class="fa fa-volume-up"></i>
+                            </div>
+                            <div class="player-control" id="volume">
+                                <input type="range" min="0" max="100" step="1" value="100">
+                            </div>
+                        </div>
+                        <div id="player-switch"></div>
+                    </div>
+                </div>
+            </div>
             <div id="desktop-menu">
                 <div class="menu-item has-sub">View
                     <div id="sub-menu">
